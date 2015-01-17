@@ -1,0 +1,69 @@
+<html>
+<head>
+<title>System monitoring</title>
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script src="/jslib"></script>
+<style>
+#table_list_all_proc
+{ 
+    width:1000px;
+}
+tr
+{
+    border:1px #000000 solid;
+}
+td{
+    border:solid #add9c0; 
+    border-width:0px 1px 1px 0px; 
+    padding:10px 0px;
+}
+th{
+    border:solid #add9c0; 
+    border-width:0px 1px 1px 0px; 
+    padding:10px 0px;
+}
+
+table{
+    border:solid #add9c0; 
+    border-width:1px 0px 0px 1px;
+}
+canvas
+{ 
+    border:solid #add9c0; 
+    border-width:3px 3px 3px 3px;
+    display:none;
+
+}
+
+div#list_all_proc
+{ 
+    margin:auto;
+}
+</style>
+</head>
+<body>
+<div id = 'list_all_proc'>
+    <table id = 'table_list_all_proc'>
+        <tr><th>pid</th>
+            <th>name</th>
+            <th>State</th>
+            <th>rss</th>
+            <th>cpu</th>
+            <th>pri</th>
+            <th>ni</th>
+            <th>time</th>
+        </tr>
+    </table> 
+</div>
+
+<script type = 'text/javascript' src= 'http://localhost/jslib/jquery.js'></script>
+
+<canvas id="Canvas"></canvas>
+<script type="text/javascript">
+
+var canvas=document.getElementById('Canvas');
+var canvas_obj =canvas.getContext('2d');
+
+</script>
+</body>
+</html>
